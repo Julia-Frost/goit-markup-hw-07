@@ -12,7 +12,7 @@
     color: var(--white-color);
     margin-bottom: 20px;
     margin-right: 0;
-    transition: text-shadow --main-animation;
+    transition: text-shadow var(--main-animation);
 
     &:hover,
     &:focus {
@@ -31,7 +31,7 @@
 
   &__text {
     margin-bottom: 9px;
-    transition: color --main-animation;
+    transition: color var(--main-animation);
     &:hover,
     &:focus {
       color: var(--hover-color);
@@ -44,7 +44,7 @@
 
   &__link {
     color: rgba(255, 255, 255, 0.6);
-    transition: color --main-animation;
+    transition: color var(--main-animation);
 
     &:hover,
     &:focus {
@@ -96,8 +96,8 @@
     justify-content: center;
     align-items: center;
     display: inline-flex;
-    box-shadow: --main-shadow;
-    transition: background-color --main-animation;
+    box-shadow: var(--main-shadow);
+    transition: background-color var(--main-animation);
 
     &:hover,
     &:focus {

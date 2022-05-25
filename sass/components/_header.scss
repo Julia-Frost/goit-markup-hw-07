@@ -17,13 +17,13 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   margin-right: 93px;
-  transition: text-shadow --main-animation;
+  transition: text-shadow var(--main-animation);
   &__text {
     color: var(--hover-color);
   }
   &:hover,
   &:focus {
-    text-shadow: --main-shadow, --main-shadow, --main-shadow;
+    text-shadow: var(--main-shadow), var(--main-shadow), var(--main-shadow);
   }
 }
 
@@ -51,7 +51,7 @@
   letter-spacing: 0.02em;
   color: var(--title-color);
 
-  transition: color --main-animation;
+  transition: color var(--main-animation);
 
   &--activ::after {
     content: '';
@@ -93,7 +93,7 @@
     letter-spacing: 0.02em;
     color: var(--text-color);
 
-    transition: color --main-animation;
+    transition: color var(--main-animation);
   }
 
   &__link:hover,

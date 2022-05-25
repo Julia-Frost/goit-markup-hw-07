@@ -36,8 +36,8 @@
     color: var(--white-color);
     cursor: pointer;
     padding: 10px 32px;
-    box-shadow: --main-shadow;
-    transition: background-color --main-animation;
+    box-shadow: var(--main-shadow);
+    transition: background-colorvar(--main-animation);
   }
 
   &__button:hover,

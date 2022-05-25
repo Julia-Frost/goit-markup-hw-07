@@ -26,8 +26,8 @@
     letter-spacing: 0.03em;
     padding: 6px 22px;
 
-    transition: background-color --main-animation, color --main-animation,
-      box-shadow --main-animation;
+    transition: background-color var(--main-animation), color var(--main-animation),
+      box-shadow var(--main-animation);
 
     &:hover,
     &:focus {

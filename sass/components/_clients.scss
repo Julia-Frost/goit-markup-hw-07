@@ -34,7 +34,7 @@
     width: 170px;
     height: 92px;
     color: var(--svg-color);
-    transition: color --main-animation, border --main-animation;
+    transition: color var(--main-animation), border var(--main-animation);
 
     &:hover,
     &:focus,

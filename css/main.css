@@ -9,8 +9,7 @@
   --background-color-light: #f5f4fa;
   --hero-background-color: #2f303a40;
   --svg-color: #afb1b8;
-  --business-description-bgc: #2f303a80
-
+  --business-description-bgc: #2f303a80;
   --card-set-gap: 30px;
   --main-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --main-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -77,14 +76,14 @@ p {
   line-height: 1.19;
   letter-spacing: 0.03em;
   margin-right: 93px;
-  -webkit-transition: text-shadow --main-animation;
-  transition: text-shadow --main-animation;
+  -webkit-transition: text-shadow var(--main-animation);
+  transition: text-shadow var(--main-animation);
 }
 .logo__text {
   color: var(--hover-color);
 }
 .logo:hover, .logo:focus {
-  text-shadow: --main-shadow, --main-shadow, --main-shadow;
+  text-shadow: var(--main-shadow), var(--main-shadow), var(--main-shadow);
 }
 
 .navigation {
@@ -115,8 +114,8 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-color);
-  -webkit-transition: color --main-animation;
-  transition: color --main-animation;
+  -webkit-transition: color var(--main-animation);
+  transition: color var(--main-animation);
 }
 .navigation__link--activ::after {
   content: "";
@@ -164,8 +163,8 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
-  -webkit-transition: color --main-animation;
-  transition: color --main-animation;
+  -webkit-transition: color var(--main-animation);
+  transition: color var(--main-animation);
 }
 .contacts__link:hover, .contacts__link:focus {
   color: var(--hover-color);
@@ -206,10 +205,10 @@ p {
   color: var(--white-color);
   cursor: pointer;
   padding: 10px 32px;
-  -webkit-box-shadow: --main-shadow;
-          box-shadow: --main-shadow;
-  -webkit-transition: background-color --main-animation;
-  transition: background-color --main-animation;
+  -webkit-box-shadow: var(--main-shadow);
+          box-shadow: var(--main-shadow);
+  -webkit-transition: background-colorvar(--main-animation);
+  transition: background-colorvar(--main-animation);
 }
 .hero__button:hover, .hero__button:focus {
   background-color: var(--button-hover-color);
@@ -286,11 +285,10 @@ p {
 }
 .business__content {
   position: relative;
-  max-height: 294px;
 }
 .business__description {
   position: absolute;
-  bottom: 0;
+  bottom: 4px;
   padding-top: 27px;
   padding-bottom: 27px;
   width: 100%;
@@ -301,7 +299,7 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
-  background-color: --business-description-bgc;
+  background-color: var(--business-description-bgc);
 }
 
 .team {
@@ -393,8 +391,8 @@ p {
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  -webkit-transition: background-color --main-animation;
-  transition: background-color --main-animation;
+  -webkit-transition: background-color var(--main-animation);
+  transition: background-color var(--main-animation);
 }
 .social-list__link--white {
   fill: var(--white-color);
@@ -420,8 +418,8 @@ p {
   fill: var(--svg-color);
   width: 44px;
   height: 44px;
-  -webkit-transition: background-color --main-animation, fill --main-animation;
-  transition: background-color --main-animation, fill --main-animation;
+  -webkit-transition: background-color var(--main-animation), fill var(--main-animation);
+  transition: background-color var(--main-animation), fill var(--main-animation);
 }
 .social-list__link:focus, .social-list__link:hover, .social-list__link:active {
   background-color: var(--hover-color);
@@ -475,8 +473,8 @@ p {
   width: 170px;
   height: 92px;
   color: var(--svg-color);
-  -webkit-transition: color --main-animation, border --main-animation;
-  transition: color --main-animation, border --main-animation;
+  -webkit-transition: color var(--main-animation), border var(--main-animation);
+  transition: color var(--main-animation), border var(--main-animation);
 }
 .clients__link:hover, .clients__link:focus, .clients__link:active {
   border: 1px solid var(--hover-color);
@@ -505,8 +503,8 @@ p {
   color: var(--white-color);
   margin-bottom: 20px;
   margin-right: 0;
-  -webkit-transition: text-shadow --main-animation;
-  transition: text-shadow --main-animation;
+  -webkit-transition: text-shadow var(--main-animation);
+  transition: text-shadow var(--main-animation);
 }
 .footer__logo:hover, .footer__logo:focus {
   text-shadow: 0px 4px 4px rgba(117, 117, 117, 0.4), 0px 4px 4px rgba(117, 117, 117, 0.4), 0px 4px 4px rgba(117, 117, 117, 0.4);
@@ -521,8 +519,8 @@ p {
 }
 .address__text {
   margin-bottom: 9px;
-  -webkit-transition: color --main-animation;
-  transition: color --main-animation;
+  -webkit-transition: color var(--main-animation);
+  transition: color var(--main-animation);
 }
 .address__text:hover, .address__text:focus {
   color: var(--hover-color);
@@ -532,8 +530,8 @@ p {
 }
 .address__link {
   color: rgba(255, 255, 255, 0.6);
-  -webkit-transition: color --main-animation;
-  transition: color --main-animation;
+  -webkit-transition: color var(--main-animation);
+  transition: color var(--main-animation);
 }
 .address__link:hover, .address__link:focus {
   color: var(--hover-color);
@@ -587,10 +585,10 @@ p {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-shadow: --main-shadow;
-          box-shadow: --main-shadow;
-  -webkit-transition: background-color --main-animation;
-  transition: background-color --main-animation;
+  -webkit-box-shadow: var(--main-shadow);
+          box-shadow: var(--main-shadow);
+  -webkit-transition: background-color var(--main-animation);
+  transition: background-color var(--main-animation);
 }
 .subscribe__button:hover, .subscribe__button:focus {
   background-color: var(--button-hover-color);
@@ -610,8 +608,8 @@ p {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  -webkit-transition: opacity --main-animation, visibility --main-animation;
-  transition: opacity --main-animation, visibility --main-animation;
+  -webkit-transition: opacity var(--main-animation), visibility var(--main-animation);
+  transition: opacity var(--main-animation), visibility var(--main-animation);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -638,10 +636,10 @@ p {
   /* transform: translate(-50%, -50%) scale(1); */
   -webkit-transform: translate(-50%, -50%) translateY(0);
           transform: translate(-50%, -50%) translateY(0);
-  -webkit-transition: -webkit-transform --main-animation;
-  transition: -webkit-transform --main-animation;
-  transition: transform --main-animation;
-  transition: transform --main-animation, -webkit-transform --main-animation;
+  -webkit-transition: -webkit-transform var(--main-animation);
+  transition: -webkit-transform var(--main-animation);
+  transition: transform var(--main-animation);
+  transition: transform var(--main-animation), -webkit-transform var(--main-animation);
 }
 .modal__button {
   position: absolute;
@@ -662,8 +660,8 @@ p {
   width: 30px;
   height: 30px;
   cursor: pointer;
-  -webkit-transition: fill --main-animation;
-  transition: fill --main-animation;
+  -webkit-transition: fill var(--main-animation);
+  transition: fill var(--main-animation);
 }
 .modal__button:hover, .modal__button:focus {
   fill: var(--hover-color);
@@ -705,8 +703,8 @@ p {
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  -webkit-transition: border-color --main-animation;
-  transition: border-color --main-animation;
+  -webkit-transition: border-color var(--main-animation);
+  transition: border-color var(--main-animation);
 }
 .form__input:focus, .form__input:hover {
   outline: 0;
@@ -719,8 +717,8 @@ p {
   position: absolute;
   left: 15px;
   top: 32px;
-  -webkit-transition: fill --main-animation;
-  transition: fill --main-animation;
+  -webkit-transition: fill var(--main-animation);
+  transition: fill var(--main-animation);
 }
 .form__feedback {
   margin-top: 4px;
@@ -734,8 +732,8 @@ p {
   letter-spacing: 0.01em;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  -webkit-transition: border-color --main-animation;
-  transition: border-color --main-animation;
+  -webkit-transition: border-color var(--main-animation);
+  transition: border-color var(--main-animation);
 }
 .form__feedback:focus, .form__feedback:hover {
   outline: 0;
@@ -751,14 +749,14 @@ p {
   font-size: 16px;
   line-height: 1.87;
   border-radius: 4px;
-  -webkit-box-shadow: --main-shadow;
-          box-shadow: --main-shadow;
+  -webkit-box-shadow: var(--main-shadow);
+          box-shadow: var(--main-shadow);
   border: none;
   background-color: var(--hover-color);
   color: var(--white-color);
   cursor: pointer;
-  -webkit-transition: background-color --main-animation;
-  transition: background-color --main-animation;
+  -webkit-transition: background-color var(--main-animation);
+  transition: background-color var(--main-animation);
 }
 .form__button:hover, .form__button:focus {
   background-color: var(--button-hover-color);
@@ -793,8 +791,8 @@ p {
   margin-right: 8px;
   border: 2px solid rgb(33, 33, 33);
   border-radius: 2px;
-  -webkit-transition: border-color --main-animation, background-color --main-animation;
-  transition: border-color --main-animation, background-color --main-animation;
+  -webkit-transition: border-color var(--main-animation), background-color var(--main-animation);
+  transition: border-color var(--main-animation), background-color var(--main-animation);
 }
 .checkbox__input:focus + .checkbox__icon {
   border-color: var(--hover-color);
@@ -840,10 +838,10 @@ p {
   line-height: 1.6;
   letter-spacing: 0.03em;
   padding: 6px 22px;
-  -webkit-transition: background-color --main-animation, color --main-animation, -webkit-box-shadow --main-animation;
-  transition: background-color --main-animation, color --main-animation, -webkit-box-shadow --main-animation;
-  transition: background-color --main-animation, color --main-animation, box-shadow --main-animation;
-  transition: background-color --main-animation, color --main-animation, box-shadow --main-animation, -webkit-box-shadow --main-animation;
+  -webkit-transition: background-color var(--main-animation), color var(--main-animation), -webkit-box-shadow var(--main-animation);
+  transition: background-color var(--main-animation), color var(--main-animation), -webkit-box-shadow var(--main-animation);
+  transition: background-color var(--main-animation), color var(--main-animation), box-shadow var(--main-animation);
+  transition: background-color var(--main-animation), color var(--main-animation), box-shadow var(--main-animation), -webkit-box-shadow var(--main-animation);
 }
 .filters-list__button:hover, .filters-list__button:focus {
   background-color: var(--hover-color);
@@ -877,10 +875,10 @@ p {
   margin-left: var(--card-set-gap);
 }
 .project__link {
-  -webkit-transition: -webkit-box-shadow --main-animation;
-  transition: -webkit-box-shadow --main-animation;
-  transition: box-shadow --main-animation;
-  transition: box-shadow --main-animation, -webkit-box-shadow --main-animation;
+  -webkit-transition: -webkit-box-shadow var(--main-animation);
+  transition: -webkit-box-shadow var(--main-animation);
+  transition: box-shadow var(--main-animation);
+  transition: box-shadow var(--main-animation), -webkit-box-shadow var(--main-animation);
 }
 .project__link:hover, .project__link:focus {
   display: block;
@@ -906,10 +904,10 @@ p {
   opacity: 0;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  -webkit-transition: background-color --main-animation, opacity --main-animation, -webkit-transform --main-animation;
-  transition: background-color --main-animation, opacity --main-animation, -webkit-transform --main-animation;
-  transition: background-color --main-animation, transform --main-animation, opacity --main-animation;
-  transition: background-color --main-animation, transform --main-animation, opacity --main-animation, -webkit-transform --main-animation;
+  -webkit-transition: background-color var(--main-animation), opacity var(--main-animation), -webkit-transform var(--main-animation);
+  transition: background-color var(--main-animation), opacity var(--main-animation), -webkit-transform var(--main-animation);
+  transition: background-color var(--main-animation), transform var(--main-animation), opacity var(--main-animation);
+  transition: background-color var(--main-animation), transform var(--main-animation), opacity var(--main-animation), -webkit-transform var(--main-animation);
 }
 .project__link:hover .project__description, .project__link:focus .project__description {
   opacity: 1;

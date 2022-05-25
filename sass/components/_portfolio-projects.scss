@@ -13,7 +13,7 @@
   }
 
   &__link {
-    transition: box-shadow --main-animation;
+    transition: box-shadow var(--main-animation);
 
     &:hover,
     &:focus {
@@ -45,8 +45,8 @@
     opacity: 0;
 
     transform: translateY(100%);
-    transition: background-color --main-animation, transform --main-animation,
-      opacity --main-animation;
+    transition: background-color var(--main-animation), transform var(--main-animation),
+      opacity var(--main-animation);
 
     .project__link:hover &,
     .project__link:focus & {

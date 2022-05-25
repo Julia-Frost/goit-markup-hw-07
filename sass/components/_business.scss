@@ -17,12 +17,11 @@
 
   &__content {
     position: relative;
-    max-height: 294px;
   }
 
   &__description {
     position: absolute;
-    bottom: 0;
+    bottom: 4px;
     padding-top: 27px;
     padding-bottom: 27px;
     width: 100%;
@@ -33,6 +32,6 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white-color);
-    background-color: --business-description-bgc;
+    background-color: var(--business-description-bgc);
   }
 }

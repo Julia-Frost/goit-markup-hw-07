@@ -9,7 +9,7 @@
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
-  transition: opacity --main-animation, visibility --main-animation;
+  transition: opacity var(--main-animation), visibility var(--main-animation);
 
   &.is-hidden {
     opacity: 0;
@@ -38,7 +38,7 @@
 
   /* transform: translate(-50%, -50%) scale(1); */
   transform: translate(-50%, -50%) translateY(0);
-  transition: transform --main-animation;
+  transition: transform var(--main-animation);
 
   &__button {
     position: absolute;
@@ -56,7 +56,7 @@
     height: 30px;
     cursor: pointer;
 
-    transition: fill --main-animation;
+    transition: fill var(--main-animation);
 
     &:hover,
     &:focus {
@@ -103,7 +103,7 @@
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transition: border-color --main-animation;
+    transition: border-color var(--main-animation);
 
     &:focus,
     &:hover {
@@ -123,7 +123,7 @@
     left: 15px;
     top: 32px;
 
-    transition: fill --main-animation;
+    transition: fill var(--main-animation);
   }
 
   &__feedback {
@@ -141,7 +141,7 @@
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transition: border-color --main-animation;
+    transition: border-color var(--main-animation);
 
     &:focus,
     &:hover {
@@ -162,14 +162,14 @@
     line-height: 1.87;
 
     border-radius: 4px;
-    box-shadow: --main-shadow;
+    box-shadow: var(--main-shadow);
     border: none;
 
     background-color: var(--hover-color);
     color: var(--white-color);
     cursor: pointer;
 
-    transition: background-color --main-animation;
+    transition: background-color var(--main-animation);
 
     &:hover,
     &:focus {
@@ -206,7 +206,7 @@
     border: 2px solid rgba(33, 33, 33, 1);
     border-radius: 2px;
 
-    transition: border-color --main-animation, background-color --main-animation;
+    transition: border-color var(--main-animation), background-color var(--main-animation);
 
     .checkbox__input:focus + & {
       border-color: var(--hover-color);
