@@ -1,0 +1,52 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__title {
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    color: var(--title-color);
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--svg-color);
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    color: var(--svg-color);
+    transition: color --main-animation, border --main-animation;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border: 1px solid var(--hover-color);
+      color: var(--hover-color);
+    }
+  }
+
+  &__icon {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+  }
+}

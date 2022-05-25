@@ -1,0 +1,25 @@
+// утилиты
+@import './utils/_variables';
+@import './utils/_utils.scss';
+
+// компоненты
+
+// Главная страница
+
+@import './components/_header.scss';
+@import './components/_hero.scss';
+@import './components/_features.scss';
+@import './components/_business.scss';
+@import './components/_team.scss';
+@import './components/_social-networks.scss';
+@import './components/_clients.scss';
+@import './components/_footer.scss';
+
+// модальноне окно
+
+@import './components/_modal.scss';
+
+// Портфолио
+
+@import './components/_portfolio-buttons.scss';
+@import './components/_portfolio-projects.scss';

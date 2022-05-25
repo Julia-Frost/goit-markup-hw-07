@@ -1,0 +1,44 @@
+.specialty {
+  padding-top: 94px;
+}
+
+.features {
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+
+  &__item {
+    max-width: 270px;
+  }
+
+  &__image {
+    background-color: var(--background-color-light);
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    max-width: 70px;
+    max-height: 70px;
+    display: block;
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+  }
+}
